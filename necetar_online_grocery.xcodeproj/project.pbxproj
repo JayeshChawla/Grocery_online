@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A35E387A2BA9896D00E4E7E1 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E38792BA9896D00E4E7E1 /* SearchTextField.swift */; };
+		A35E387C2BA98E1700E4E7E1 /* SectionTitleAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E387B2BA98E1700E4E7E1 /* SectionTitleAll.swift */; };
+		A35E387E2BA9923900E4E7E1 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E387D2BA9923900E4E7E1 /* ProductCell.swift */; };
+		A35E38802BA99D1F00E4E7E1 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E387F2BA99D1F00E4E7E1 /* CategoryCell.swift */; };
+		A35E38822BA9AE9A00E4E7E1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E38812BA9AE9A00E4E7E1 /* Product.swift */; };
+		A39415372BA95A730068AAC8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39415362BA95A730068AAC8 /* HomeViewModel.swift */; };
+		A394153A2BA95B060068AAC8 /* MainTabVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39415392BA95B060068AAC8 /* MainTabVIew.swift */; };
+		A394153D2BA95B7E0068AAC8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A394153C2BA95B7E0068AAC8 /* HomeView.swift */; };
+		A39415402BA95F320068AAC8 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A394153F2BA95F320068AAC8 /* ExploreView.swift */; };
+		A39415442BA96F470068AAC8 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39415432BA96F470068AAC8 /* TabButton.swift */; };
 		A3B5ED0C2BA7F087008FF936 /* necetar_online_groceryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5ED0B2BA7F087008FF936 /* necetar_online_groceryApp.swift */; };
 		A3B5ED102BA7F088008FF936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B5ED0F2BA7F088008FF936 /* Assets.xcassets */; };
 		A3B5ED202BA7F473008FF936 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B5ED1F2BA7F473008FF936 /* Launch Screen.storyboard */; };
@@ -20,6 +30,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A35E38792BA9896D00E4E7E1 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		A35E387B2BA98E1700E4E7E1 /* SectionTitleAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleAll.swift; sourceTree = "<group>"; };
+		A35E387D2BA9923900E4E7E1 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		A35E387F2BA99D1F00E4E7E1 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		A35E38812BA9AE9A00E4E7E1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		A39415362BA95A730068AAC8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A39415392BA95B060068AAC8 /* MainTabVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabVIew.swift; sourceTree = "<group>"; };
+		A394153C2BA95B7E0068AAC8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A394153F2BA95F320068AAC8 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		A39415432BA96F470068AAC8 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
 		A3B5ED082BA7F087008FF936 /* necetar_online_grocery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = necetar_online_grocery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B5ED0B2BA7F087008FF936 /* necetar_online_groceryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = necetar_online_groceryApp.swift; sourceTree = "<group>"; };
 		A3B5ED0F2BA7F088008FF936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +65,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A39415382BA95AD60068AAC8 /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				A39415392BA95B060068AAC8 /* MainTabVIew.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		A394153B2BA95B6E0068AAC8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A394153C2BA95B7E0068AAC8 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A394153E2BA95F1F0068AAC8 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				A394153F2BA95F320068AAC8 /* ExploreView.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
 		A3B5ECFF2BA7F087008FF936 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +123,7 @@
 		A3B5ED192BA7F3E3008FF936 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A35E38812BA9AE9A00E4E7E1 /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -86,6 +131,9 @@
 		A3B5ED1B2BA7F404008FF936 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A394153E2BA95F1F0068AAC8 /* Explore */,
+				A394153B2BA95B6E0068AAC8 /* Home */,
+				A39415382BA95AD60068AAC8 /* MainTab */,
 				A3B5ED282BA801F5008FF936 /* Login */,
 			);
 			path = View;
@@ -95,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				A3B5ED2F2BA824F5008FF936 /* MainViewModel.swift */,
+				A39415362BA95A730068AAC8 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -112,6 +161,11 @@
 			children = (
 				A3B5ED262BA7F738008FF936 /* Extension.swift */,
 				A3BC6EE72BA840CE005E72FB /* LineTextField.swift */,
+				A39415432BA96F470068AAC8 /* TabButton.swift */,
+				A35E38792BA9896D00E4E7E1 /* SearchTextField.swift */,
+				A35E387B2BA98E1700E4E7E1 /* SectionTitleAll.swift */,
+				A35E387D2BA9923900E4E7E1 /* ProductCell.swift */,
+				A35E387F2BA99D1F00E4E7E1 /* CategoryCell.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -207,13 +261,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35E38802BA99D1F00E4E7E1 /* CategoryCell.swift in Sources */,
 				A3B5ED252BA7F51B008FF936 /* SignIn.swift in Sources */,
+				A394153A2BA95B060068AAC8 /* MainTabVIew.swift in Sources */,
+				A39415372BA95A730068AAC8 /* HomeViewModel.swift in Sources */,
 				A3B5ED2E2BA81DC4008FF936 /* Login.swift in Sources */,
 				A3B5ED272BA7F738008FF936 /* Extension.swift in Sources */,
+				A394153D2BA95B7E0068AAC8 /* HomeView.swift in Sources */,
+				A35E387C2BA98E1700E4E7E1 /* SectionTitleAll.swift in Sources */,
 				A3B5ED232BA7F510008FF936 /* Welcome.swift in Sources */,
 				A3B5ED0C2BA7F087008FF936 /* necetar_online_groceryApp.swift in Sources */,
 				A3BC6EEB2BA85886005E72FB /* SignUp.swift in Sources */,
+				A39415442BA96F470068AAC8 /* TabButton.swift in Sources */,
 				A3B5ED302BA824F5008FF936 /* MainViewModel.swift in Sources */,
+				A35E38822BA9AE9A00E4E7E1 /* Product.swift in Sources */,
+				A35E387A2BA9896D00E4E7E1 /* SearchTextField.swift in Sources */,
+				A35E387E2BA9923900E4E7E1 /* ProductCell.swift in Sources */,
+				A39415402BA95F320068AAC8 /* ExploreView.swift in Sources */,
 				A3BC6EE82BA840CE005E72FB /* LineTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
