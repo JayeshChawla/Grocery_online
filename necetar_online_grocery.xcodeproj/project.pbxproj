@@ -27,6 +27,7 @@
 		A3B5ED302BA824F5008FF936 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5ED2F2BA824F5008FF936 /* MainViewModel.swift */; };
 		A3BC6EE82BA840CE005E72FB /* LineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BC6EE72BA840CE005E72FB /* LineTextField.swift */; };
 		A3BC6EEB2BA85886005E72FB /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BC6EEA2BA85886005E72FB /* SignUp.swift */; };
+		A3E989D72BAAD90200331B66 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E989D62BAAD90200331B66 /* ProductDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		A3B5ED2F2BA824F5008FF936 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		A3BC6EE72BA840CE005E72FB /* LineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextField.swift; sourceTree = "<group>"; };
 		A3BC6EEA2BA85886005E72FB /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		A3E989D62BAAD90200331B66 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				A394153C2BA95B7E0068AAC8 /* HomeView.swift */,
+				A3E989D62BAAD90200331B66 /* ProductDetailView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -205,6 +208,8 @@
 			dependencies = (
 			);
 			name = necetar_online_grocery;
+			packageProductDependencies = (
+			);
 			productName = necetar_online_grocery;
 			productReference = A3B5ED082BA7F087008FF936 /* necetar_online_grocery.app */;
 			productType = "com.apple.product-type.application";
@@ -266,6 +271,7 @@
 				A394153A2BA95B060068AAC8 /* MainTabVIew.swift in Sources */,
 				A39415372BA95A730068AAC8 /* HomeViewModel.swift in Sources */,
 				A3B5ED2E2BA81DC4008FF936 /* Login.swift in Sources */,
+				A3E989D72BAAD90200331B66 /* ProductDetailView.swift in Sources */,
 				A3B5ED272BA7F738008FF936 /* Extension.swift in Sources */,
 				A394153D2BA95B7E0068AAC8 /* HomeView.swift in Sources */,
 				A35E387C2BA98E1700E4E7E1 /* SectionTitleAll.swift in Sources */,

@@ -73,7 +73,7 @@ struct SignUp: View {
 
                     
                     NavigationLink {
-                       HomeView()
+                       MainTabVIew()
                     } label: {
                         Text("Sign Up")
                             .foregroundColor(.white)

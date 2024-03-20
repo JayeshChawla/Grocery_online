@@ -94,5 +94,19 @@ struct ShowButton : ViewModifier{
         }
     }
 }
+extension View{
+    func cornerRadius(_ radius : CGFloat , corner : UIRectCorner) -> some View{
+        clipShape(RounderCorner(radius: radius, corner: corner))
+    }
+}
+struct RounderCorner : Shape{
+    var radius : CGFloat = .infinity
+    var corner : UIRectCorner = .allCorners
+    
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corner, cornerRadii: CGSize(width: radius, height: radius))
+        return Path(path.cgPath)
+    }
+}
 
 

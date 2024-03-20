@@ -49,9 +49,10 @@ struct HomeView: View {
                 }
                 .padding(.horizontal , 20)
                 
+                if let products = homeVM.productResponse?.data{
                 ScrollView(.horizontal , showsIndicators: false){
                     LazyHStack(spacing : 15){
-                        ForEach(homeVM.product, id: \.self) { product in
+                        ForEach(products, id: \.id) { product in
                             ProductCell(product: product) {
                                 
                             }
@@ -60,15 +61,17 @@ struct HomeView: View {
                     .padding(.horizontal , 20)
                     .padding(.vertical , 4)
                 }
+            }
                 
                 SectionTitleAll(title: "Best Selling", titleall: "See all"){
                     
                 }
                 .padding(.horizontal , 20)
                 
+                if let products = homeVM.productResponse?.data{
                 ScrollView(.horizontal , showsIndicators: false){
                     LazyHStack(spacing : 15){
-                        ForEach(homeVM.product, id: \.self) { product in
+                        ForEach(products, id: \.id) { product in
                             ProductCell(product: product) {
 
                             }
@@ -77,11 +80,13 @@ struct HomeView: View {
                     .padding(.horizontal , 20)
                     .padding(.vertical , 4)
                 }
+                }
                 
                 SectionTitleAll(title: "Groceries", titleall: "See all"){
                     
                 }
                 .padding(.horizontal , 20)
+                
                 
                 ScrollView(.horizontal , showsIndicators: false){
                     LazyHStack(spacing : 15){
@@ -95,9 +100,10 @@ struct HomeView: View {
                     .padding(.vertical , 4)
                 }
                 
+                if let products = homeVM.productResponse?.data{
                 ScrollView(.horizontal , showsIndicators: false){
                     LazyHStack(spacing : 15){
-                        ForEach(homeVM.product, id: \.self) { product in
+                        ForEach(products, id: \.id) { product in
                             ProductCell(product: product) {
 
                             }
@@ -106,12 +112,13 @@ struct HomeView: View {
                     .padding(.horizontal , 20)
                     .padding(.vertical , 4)
                 }
-                .padding(.bottom , 15)
+                }
+//                .padding(.bottom , 15)
              
             }
-//            .onAppear {
-//              homeVM.fetch()
-//            }
+            .onAppear {
+              homeVM.fetch()
+            }
         }
         .navigationBarHidden(true)
         .ignoresSafeArea()
