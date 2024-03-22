@@ -1,45 +1,25 @@
 //
-//  HomeViewModel.swift
+//  ExploreViewModel.swift
 //  necetar_online_grocery
 //
-//  Created by MACPC on 19/03/24.
+//  Created by MACPC on 22/03/24.
 //
 
-import SwiftUI
+import Foundation
 
-class HomeViewModel: ObservableObject {
-    static var shared : HomeViewModel = HomeViewModel()
+class ExploreViewModel : ObservableObject{
+    static var shared : ExploreViewModel = ExploreViewModel()
+    
     
     @Published var selectedTab : Int = 0
     @Published var searchtxt : String = ""
-    @Published var productResponse : ProductsResponse?
+    @Published var exploreCategory  : ExploreResponse?
     
-    @Published var isShowDetails : Bool = false
-    @Published var isShowNutrients : Bool = false
-    @Published var qty : Int = 1
+   
     
-    func showDetails(){
-        isShowDetails = !isShowDetails
-    }
-    func showNutrition(){
-        isShowNutrients = !isShowNutrients
-    }
-    func addSubQty(isAdd : Bool = true){
-        if(isAdd){
-            qty += 1
-            if(qty > 99){
-                qty = 99
-            }
-        }else{
-            qty -= 1
-            if(qty < 1){
-                qty = 1
-            }
-        }
-    }
     
     func fetch (){
-            guard let url = URL(string: "http://192.168.1.5:8000/api/products-category/1") else {
+            guard let url = URL(string: "http://192.168.1.4:3000/") else {
                 print("Invalid Url")
                 return
             }
@@ -62,9 +42,9 @@ class HomeViewModel: ObservableObject {
                 
                 // Decode JSON
                 do {
-                    let productResponse = try JSONDecoder().decode(ProductsResponse.self, from: data) // Change here
+                    let productResponse = try JSONDecoder().decode(ExploreResponse.self, from: data) // Change here
                     DispatchQueue.main.async {
-                        self.productResponse = productResponse // Change here
+                        self.exploreCategory = productResponse // Change here
                     }
                 } catch {
                     print("Error in decoding JSON: \(error)")
@@ -73,4 +53,3 @@ class HomeViewModel: ObservableObject {
             task.resume()
         }
 }
-

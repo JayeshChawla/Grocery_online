@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ProductCell: View {
     
+    @State private var isFavorite: Bool = false
+    @State var width : Double = 180.0
     var product : Product
     var didAddCart : (()->())?
     var body: some View {
@@ -72,7 +74,7 @@ struct ProductCell: View {
             
         }
         .padding(15)
-        .frame(width : 180 , height: 230)
+        .frame(width : width , height: 230)
         .overlay{
             RoundedRectangle(cornerRadius: 16)
                 .stroke(Color.black.opacity(0.2) , lineWidth: 1)
@@ -85,6 +87,6 @@ struct ProductCell_Previews: PreviewProvider {
     static var previews: some View {
         let sampleProduct = Product(id: 1, productName: "Apple", description: "Description", quantity: 10, price: 5.99, image: "banana", categoryId: 1)
         return ProductCell(product:sampleProduct )
-            .previewLayout(.fixed(width:180, height: 230))
+           
     }
 }

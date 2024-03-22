@@ -11,9 +11,26 @@ struct ProductDetailView: View {
     
     var product : Product
     
+    @State private var isFavorite: Bool = false
+    
     @Environment(\.presentationMode) var mode : Binding<PresentationMode>
     @StateObject var homeVM = HomeViewModel.shared
-    @State private var isHeartFilled = false
+    
+//    private var isFavorite: Bool {
+//           favoriteProducts.contains { $0.id == product.id }
+//       }
+    
+    @State private var favoriteProductIds: [Int] = UserDefaults.standard.array(forKey: "FavouriteProducts") as? [Int] ?? []
+    
+    @State private var favoriteProducts: [Product] = {
+        if let savedData = UserDefaults.standard.data(forKey: "FavouriteProducts"),
+           let decodedData = try? JSONDecoder().decode([Product].self, from: savedData) {
+            return decodedData
+        } else {
+            return []
+        }
+    }()
+
     
     var body: some View {
         ZStack{
@@ -54,13 +71,10 @@ struct ProductDetailView: View {
                             .frame(minWidth : 0 , maxWidth: .infinity , alignment: .leading)
                         
                         Button(action: {
-                            withAnimation {
-                                isHeartFilled.toggle()
-                            }
-                            
+                            toggleFavorite()
                         }) {
-                            Image(systemName: isHeartFilled ? "heart.fill" : "heart")
-                                .foregroundColor(isHeartFilled ? .red : .primary)
+                            Image(systemName: isFavorite ? "heart.fill" : "heart")
+                                .foregroundColor(isFavorite ? .red : .gray)
                                 
                         }
                        
@@ -299,12 +313,46 @@ struct ProductDetailView: View {
         }
         .navigationBarHidden(true)
         .ignoresSafeArea()
+        .onAppear {
+                updateFavoriteStatus()
+            }
     }
+    
+    
+    
+    private func updateFavoriteStatus() {
+        // Assuming the favorite products are stored as an array of IDs in UserDefaults
+        let favoriteProductIds: [Int] = UserDefaults.standard.array(forKey: "FavouriteProducts") as? [Int] ?? []
+        self.isFavorite = favoriteProductIds.contains(product.id)
+    }
+    
+    private func toggleFavorite() {
+        var favoriteProductIds: [Int] = UserDefaults.standard.array(forKey: "FavouriteProducts") as? [Int] ?? []
+
+        if isFavorite {
+            // Remove from favorites
+            favoriteProductIds.removeAll { $0 == product.id }
+            isFavorite = false
+            print("Removed : \(favoriteProductIds)")
+        } else {
+            // Add to favorites
+            favoriteProductIds.append(product.id)
+            isFavorite = true
+            print("Added : \(favoriteProductIds)")
+        }
+
+        // Save updated favorites back to UserDefaults
+        UserDefaults.standard.set(favoriteProductIds, forKey: "FavouriteProducts")
+    }
+
+
+
 }
 
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
         let sampleProduct = Product(id: 1, productName: "Apple", description: "Description", quantity: 10, price: 5.99, image: "banana", categoryId: 1)
-        ProductDetailView(product: sampleProduct)
+        @State var isFavorite: Bool = false
+         return ProductDetailView(product: sampleProduct)
     }
 }
