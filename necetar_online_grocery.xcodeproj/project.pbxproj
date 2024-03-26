@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3142C3A2BB2C9B600AEF9CF /* DeliveredAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3142C392BB2C9B600AEF9CF /* DeliveredAddressView.swift */; };
+		A3142C3C2BB2D45D00AEF9CF /* AddDeliveryAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3142C3B2BB2D45D00AEF9CF /* AddDeliveryAddressView.swift */; };
 		A321AC252BAD4EA3005E8977 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A321AC242BAD4EA3005E8977 /* ExploreViewModel.swift */; };
 		A321AC272BAD4F14005E8977 /* ExploreCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A321AC262BAD4F14005E8977 /* ExploreCategory.swift */; };
 		A321AC292BAD57C1005E8977 /* ExplorecategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A321AC282BAD57C1005E8977 /* ExplorecategoryCell.swift */; };
 		A32231A52BAD86CA00C5B0CC /* ExploreItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32231A42BAD86CA00C5B0CC /* ExploreItemView.swift */; };
+		A35B8BEE2BB2897C001A9CBF /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B8BED2BB2897C001A9CBF /* AccountView.swift */; };
+		A35B8BF02BB29862001A9CBF /* AccountRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B8BEF2BB29862001A9CBF /* AccountRow.swift */; };
 		A35E387A2BA9896D00E4E7E1 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E38792BA9896D00E4E7E1 /* SearchTextField.swift */; };
 		A35E387C2BA98E1700E4E7E1 /* SectionTitleAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E387B2BA98E1700E4E7E1 /* SectionTitleAll.swift */; };
 		A35E387E2BA9923900E4E7E1 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35E387D2BA9923900E4E7E1 /* ProductCell.swift */; };
@@ -37,10 +41,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3142C392BB2C9B600AEF9CF /* DeliveredAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveredAddressView.swift; sourceTree = "<group>"; };
+		A3142C3B2BB2D45D00AEF9CF /* AddDeliveryAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeliveryAddressView.swift; sourceTree = "<group>"; };
 		A321AC242BAD4EA3005E8977 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		A321AC262BAD4F14005E8977 /* ExploreCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCategory.swift; sourceTree = "<group>"; };
 		A321AC282BAD57C1005E8977 /* ExplorecategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorecategoryCell.swift; sourceTree = "<group>"; };
 		A32231A42BAD86CA00C5B0CC /* ExploreItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItemView.swift; sourceTree = "<group>"; };
+		A35B8BED2BB2897C001A9CBF /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		A35B8BEF2BB29862001A9CBF /* AccountRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRow.swift; sourceTree = "<group>"; };
 		A35E38792BA9896D00E4E7E1 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		A35E387B2BA98E1700E4E7E1 /* SectionTitleAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleAll.swift; sourceTree = "<group>"; };
 		A35E387D2BA9923900E4E7E1 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
@@ -79,6 +87,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A35B8BEC2BB2896A001A9CBF /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				A35B8BED2BB2897C001A9CBF /* AccountView.swift */,
+				A3142C392BB2C9B600AEF9CF /* DeliveredAddressView.swift */,
+				A3142C3B2BB2D45D00AEF9CF /* AddDeliveryAddressView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 		A3809C662BABF6B000C5E907 /* Favourite */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +174,7 @@
 		A3B5ED1B2BA7F404008FF936 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A35B8BEC2BB2896A001A9CBF /* Account */,
 				A3809C662BABF6B000C5E907 /* Favourite */,
 				A394153E2BA95F1F0068AAC8 /* Explore */,
 				A394153B2BA95B6E0068AAC8 /* Home */,
@@ -195,6 +214,7 @@
 				A35E387F2BA99D1F00E4E7E1 /* CategoryCell.swift */,
 				A3809C692BAC03AF00C5E907 /* FavouriteRow.swift */,
 				A321AC282BAD57C1005E8977 /* ExplorecategoryCell.swift */,
+				A35B8BEF2BB29862001A9CBF /* AccountRow.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -298,6 +318,7 @@
 				A394153A2BA95B060068AAC8 /* MainTabVIew.swift in Sources */,
 				A39415372BA95A730068AAC8 /* HomeViewModel.swift in Sources */,
 				A3B5ED2E2BA81DC4008FF936 /* Login.swift in Sources */,
+				A35B8BF02BB29862001A9CBF /* AccountRow.swift in Sources */,
 				A3E989D72BAAD90200331B66 /* ProductDetailView.swift in Sources */,
 				A3B5ED272BA7F738008FF936 /* Extension.swift in Sources */,
 				A321AC252BAD4EA3005E8977 /* ExploreViewModel.swift in Sources */,
@@ -305,9 +326,11 @@
 				A394153D2BA95B7E0068AAC8 /* HomeView.swift in Sources */,
 				A32231A52BAD86CA00C5B0CC /* ExploreItemView.swift in Sources */,
 				A35E387C2BA98E1700E4E7E1 /* SectionTitleAll.swift in Sources */,
+				A3142C3A2BB2C9B600AEF9CF /* DeliveredAddressView.swift in Sources */,
 				A3B5ED232BA7F510008FF936 /* Welcome.swift in Sources */,
 				A3B5ED0C2BA7F087008FF936 /* necetar_online_groceryApp.swift in Sources */,
 				A3BC6EEB2BA85886005E72FB /* SignUp.swift in Sources */,
+				A3142C3C2BB2D45D00AEF9CF /* AddDeliveryAddressView.swift in Sources */,
 				A39415442BA96F470068AAC8 /* TabButton.swift in Sources */,
 				A3B5ED302BA824F5008FF936 /* MainViewModel.swift in Sources */,
 				A35E38822BA9AE9A00E4E7E1 /* Product.swift in Sources */,
@@ -316,6 +339,7 @@
 				A3809C6A2BAC03AF00C5E907 /* FavouriteRow.swift in Sources */,
 				A39415402BA95F320068AAC8 /* ExploreView.swift in Sources */,
 				A321AC272BAD4F14005E8977 /* ExploreCategory.swift in Sources */,
+				A35B8BEE2BB2897C001A9CBF /* AccountView.swift in Sources */,
 				A3BC6EE82BA840CE005E72FB /* LineTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

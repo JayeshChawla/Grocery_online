@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainTabVIew: View {
+    
 
     @StateObject var homeVM =  HomeViewModel.shared
     @State private var isShopSelected = false
@@ -25,7 +26,7 @@ struct MainTabVIew: View {
             } else if(homeVM.selectedTab == 3){
                FavouriteView()
             } else if(homeVM.selectedTab == 4){
-                ExploreView()
+                AccountView()
             }
             
             

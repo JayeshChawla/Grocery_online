@@ -19,7 +19,7 @@ class ExploreViewModel : ObservableObject{
     
     
     func fetch (){
-            guard let url = URL(string: "http://192.168.1.4:3000/") else {
+            guard let url = URL(string: "http://192.168.1.2:3000/") else {
                 print("Invalid Url")
                 return
             }
